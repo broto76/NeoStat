@@ -63,6 +63,25 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/summary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:orientation="horizontal"
             >
 
@@ -76,6 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Property"
+                    android:textColor="@color/colorPrimaryDark"
                     android:layout_gravity="center"
                     android:textAlignment="center"
                     android:layout_marginStart="10dp"
@@ -93,6 +113,7 @@
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimaryDark"
                     android:text="Value"
                     android:layout_gravity="center"
                     android:textAlignment="center"
@@ -111,6 +132,7 @@
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimaryDark"
                     android:text="Asteroid ID"
                     android:layout_gravity="center"
                     android:textAlignment="center"
@@ -139,6 +161,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Fastest Asteroid"
+                    android:textColor="@color/colorPrimaryDark"
                     android:layout_gravity="center"
                     android:textAlignment="center"
                     android:layout_marginStart="10dp"
@@ -158,6 +181,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="0 kmph"
+                    android:textStyle="bold|italic"
                     android:layout_gravity="center"
                     android:textAlignment="center"
                     android:layout_marginStart="10dp"
@@ -177,6 +201,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="001"
+                    android:textStyle="bold|italic"
                     android:layout_gravity="center"
                     android:textAlignment="center"
                     android:layout_marginStart="10dp"
@@ -204,6 +229,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Closest Asteroid"
+                    android:textColor="@color/colorPrimaryDark"
                     android:layout_gravity="center"
                     android:textAlignment="center"
                     android:layout_marginStart="10dp"
@@ -223,6 +249,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="0 lunar distance"
+                    android:textStyle="bold|italic"
                     android:layout_gravity="center"
                     android:textAlignment="center"
                     android:layout_marginStart="10dp"
@@ -242,6 +269,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="002"
+                    android:textStyle="bold|italic"
                     android:layout_gravity="center"
                     android:textAlignment="center"
                     android:layout_marginStart="10dp"
@@ -269,6 +297,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Average Asteroid Size"
+                    android:textColor="@color/colorPrimaryDark"
                     android:layout_gravity="center"
                     android:textAlignment="center"
                     android:layout_marginStart="10dp"
@@ -287,6 +316,7 @@
                     android:id="@+id/tv_average_size"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:textStyle="bold|italic"
                     android:text="0km"
                     android:layout_gravity="center"
                     android:textAlignment="center"
