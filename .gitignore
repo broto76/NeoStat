@@ -83,3 +83,7 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+app/libs/graphlib.jar
+
+app/src/main/java/com/broto/neostat/utility/Constants.java

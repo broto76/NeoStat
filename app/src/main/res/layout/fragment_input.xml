@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".fragments.InputFragment">
+
+
+    <EditText
+        android:id="@+id/et_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorPrimaryAccent"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="text"
+        android:textColor="@color/colorPrimaryAccent"
+        app:layout_constraintBottom_toTopOf="@id/et_end_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="01-02-2021" />
+
+    <EditText
+        android:id="@+id/et_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:text="05-02-2021"
+        android:textColor="@color/colorPrimaryAccent"
+        android:inputType="text"
+        android:focusable="false"
+        android:backgroundTint="@color/colorPrimaryAccent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_date"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/et_start_date"
+        app:layout_constraintTop_toTopOf="@id/et_start_date"
+        app:layout_constraintBottom_toBottomOf="@id/et_start_date"
+        />
+
+    <TextView
+        android:id="@+id/tv_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_date"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/et_end_date"
+        app:layout_constraintTop_toTopOf="@id/et_end_date"
+        app:layout_constraintBottom_toBottomOf="@id/et_end_date"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:text="@string/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryLight"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_end_date"
+        app:layout_constraintVertical_bias="0.25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
